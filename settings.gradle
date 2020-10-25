@@ -1,0 +1,3 @@
+include ':patterner'
+include ':app'
+rootProject.name = "Patterner"
