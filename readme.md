@@ -10,7 +10,9 @@ Patterner is an android library, that draws line patterns on google map programm
 <table>
 <tr>
 <td>
-<img  width="200" height="400" src="https://github.com/AmosKorir/Patterner-googlemap-patterns/art/s.jpg"/>
+<img  width="200" height="400" src="https://github.com/AmosKorir/Patterner-googlemap-patterns/blob/master/art/s.jpg"/>
+
+
 </td>
 </tr>
 </table>
