@@ -3,13 +3,18 @@ plugins {
   id 'kotlin-android'
 }
 
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+
 android {
   compileSdkVersion 30
-  buildToolsVersion "30.0.0"
+  buildToolsVersion "30.0.3"
 
   defaultConfig {
+    manifestPlaceholders = [mapKey:localProperties["api_map_key"]]
     applicationId "com.amoskorir.patterner"
-    minSdkVersion 30
+    minSdkVersion 24
     targetSdkVersion 30
     versionCode 1
     versionName "1.0"
@@ -40,7 +45,9 @@ dependencies {
   implementation 'com.google.android.material:material:1.2.1'
   implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
     implementation project(path: ':patterner')
-    testImplementation 'junit:junit:4.+'
+  implementation 'com.google.android.gms:play-services-maps:17.0.0'
+  testImplementation 'junit:junit:4.+'
   androidTestImplementation 'androidx.test.ext:junit:1.1.2'
   androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
 }
