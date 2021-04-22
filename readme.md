@@ -89,8 +89,9 @@ Add dependency to the Gradle:
   ): Bitmap
 
 ```
-**To run this example you need to set the you map api key in local.properties file**
-add below and change the value to you api key
+**To run this example you need to set your map api key in local.properties file**
+
+add below line and change the value to your api key
 
 
 ```json
